@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <App xmlns="" ProductID="{aadf4b04-9e2e-4a07-9689-25d4745c2c93}" Title="NaRuTo" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="" Description="Naruto (ナルト?) is an ongoing Japanese manga series written and illustrated by Masashi Kishimoto. The plot tells the story of Naruto Uzumaki, an adolescent ninja who constantly searches for recognition and dreams to become the Hokage, the ninja in his villa" Publisher="" PublisherID="{e7d94c95-4681-45a0-a8b4-5df4e482fb9e}">
+    <IconPath IsRelative="true" IsResource="false">Images\Logo-416247b6-6398-486e-8574-681c00cc50ff.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING"/>
+      <Capability Name="ID_CAP_SENSORS"/>
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>
+      <Capability Name="ID_CAP_SPEECH_RECOGNITION" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+      <Capability Name="ID_CAP_LOCATION" />
+      <Capability Name="ID_CAP_PROXIMITY" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+      <Capability Name="ID_CAP_MAP" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="View/start_Menu.xaml" ActivationPolicy="Resume"/>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="MyDoWapp" TaskName="_default">
+	    <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">Images/Logo-416247b6-6398-486e-8574-681c00cc50ff.png</SmallImageURI>
+		  <Count>0</Count>
+		  <BackgroundImageURI IsRelative="true" IsResource="false">Images/Logo-416247b6-6398-486e-8574-681c00cc50ff.png</BackgroundImageURI>
+          <Title>NaRuTo</Title>
+          <BackContent></BackContent>
+	      <BackBackgroundImageURI IsRelative="true" IsResource="false">Images/Tileback-6162ecb9-7239-4360-a8a1-519766604f28.png</BackBackgroundImageURI>
+          <BackTitle>NaRuTo</BackTitle>
+		  		  <LargeBackgroundImageURI IsRelative="true" IsResource="false">Images/Logo-416247b6-6398-486e-8574-681c00cc50ff.png</LargeBackgroundImageURI>
+		  <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">Images/Tileback-6162ecb9-7239-4360-a8a1-519766604f28.png</LargeBackBackgroundImageURI>
+ 
+          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
+          <HasLarge>True</HasLarge>		
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <Extension ExtensionName="LockScreen_Notification_IconCount" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+      <Extension ExtensionName="LockScreen_Notification_TextField" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+      <Extension ExtensionName="LockScreen_Background" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+    </Extensions>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
